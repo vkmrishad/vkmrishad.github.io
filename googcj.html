@@ -1,11 +1,12 @@
 <html><head><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
-
+    
 
 </head>
 <body style="margin: 0px;font: 14px/18px sans-serif;">
  
-<iframe id="myIframe" src="https://www.google.com/appserve/security-bugs/log/youtube" style="width: 100%;height: 100%;border: none;"></iframe>
+<iframe id="myIframe" src="https://helpx.adobe.com/experience-manager/6-2/sites/deploying/using/single-sign-on.html#" style="width: 100%;height: 100%;border: none;"></iframe>
+
 <script type="text/javascript">
 /*	ifm = $("#myIframe").contents().find('document').html()	
 	console.log(ifm)
@@ -15,20 +16,37 @@
 	console.log(win.body)*/
 	//document.getElementById('myIframe').style.display = 'none';
 
-	console.log(document.getElementById("myIframe").contentWindow.cookie)
-	           setTimeout( function() {
-	           	var $frame = $("#myIframe");
+
+	
+/*	           	var $frame = $("#myIframe");
             	$('body').html( $frame );
             	console.log($('body').html( $frame ))
                 var doc = $frame.contentWindow;
-                var $body = $('body',doc);
-                $body.html("<script>alert(document.domain);<\/script>");
-            }, 1 );
+                var $body = $('head',doc);
+                $body.html('ss');*/
 
 
 
-</script>
-<script>alert(document.domain);</script>	
+var myIFrame = document.getElementById("myIframe");
+var content = myIFrame.contentDocument;
+               
+console.log(content)
+
+
+      $("#myIFrame").contents().find("body");
+
+
+  
+
+
+</script>	
+
+ <script>
+$('iframe').load( function() {
+    console.log($('iframe').contents().find("head"))
+      
+});
+  </script>
 
 </body></html>
 
