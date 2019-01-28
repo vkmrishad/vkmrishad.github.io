@@ -40,7 +40,7 @@ h6{
     line-height:1.5em;
 }
 a{
-    color:#FFC107;
+    color:#039eff;
     text-decoration:none;
     -webkit-transition:all 0.3s ease 0s;
     -moz-transition:all 0.3s ease 0s;
@@ -53,7 +53,7 @@ a,a:active,a:focus,a:active{
 }
 a:hover,a:focus{
     text-decoration:none;
-    color:#ff9800;
+    color:#0c89d7;
 }
 p{
     margin-bottom:20px;
@@ -78,10 +78,10 @@ ul{
     padding:15px 30px;
 }
 .btn-primary{
-    background-color:#FFC107;
+    background-color:#039eff;
 }
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active:focus{
-    background:#ff9800;
+    background:#0c89d7;
 }
 .btn-default{
     color:#2a54f5;
