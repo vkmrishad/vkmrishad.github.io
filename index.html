@@ -1,540 +1,622 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Mohammed Rishad - Profile</title>
-        <!-- favicon -->
-        <link href="favicon.png" rel=icon>
-        <!-- web-fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
-        <!-- font-awesome -->
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Style CSS -->
-        <link href="css/style.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body id="page-top" data-spy="scroll" data-target=".navbar">
-        <div id="main-wrapper">
-            <!-- Page Preloader -->
-            <div id="preloader">
-                <div id="status">
-                    <div class="status-mes"></div>
-                </div>
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <title>Mohammed Rishad</title>
+      <meta name="description" content="Mohammed Rishad Personal Website"/>
+      <meta name="keywords"
+         content="mohammed rishad, vkmrishad, python developer, django developer, top python developer"/>
+      <meta name="author" content="Mohammed Rishad"/>
+      <!--Favicon-->
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <!--Fonts - changed to Source Code Pro-->
+      <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
+      <!--CSS-->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+   </head>
+   <body id="body" data-ng-app="contactApp">
+      <!--Fixed Bg Image-->
+      <div class="fixed-bg"></div>
+      <div class="fixed-bg-overlay"></div>
+      <!--/Fixed Bg Image-->
+      <!--Preloader-->
+      <div id="pre_load" class="preloader-it">
+         <div id="la_anim" class="la-anim-1"></div>
+      </div>
+      <!--/Preloader-->
+      <!--Container-->
+      <div class="container-fluid">
+         <div class="row">
+            <div id="vertical_nav_wrap" class="col-lg-4 col-xs-12 pad-zero vertical-nav-wrap">
+               <!--Navigation-->
+               <nav class="navbar navbar-default vertical-nav" role="navigation">
+                  <div class="navbar-header">
+                     <button type="button" class="btn btn-default navbar-toggle" data-toggle="collapse"
+                        data-target="#navbar_collapse">
+                     <span class="mask"></span>
+                     <span class="btn-label">
+                     <span class="pe-7s-menu"></span>
+                     </span>
+                     </button>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbar_collapse">
+                     <ul class="nav navbar-nav">
+                        <li><a data-scroll href="#body"><span>about</span></a></li>
+                        <!--<li><a data-scroll href="#services_sec"><span>services</span></a></li>-->
+                        <li><a data-scroll href="#skill_sec"><span>skills</span></a></li>
+                        <!-- <li><a data-scroll href="#work_sec"><span>work</span></a></li> -->
+                        <li><a data-scroll href="#edu_sec"><span>education</span></a></li>
+                        <li><a data-scroll href="#exp_sec"><span>experience</span></a></li>
+                        <!--<li><a data-scroll href="#client_sec"><span>clients</span></a></li>-->
+                        <li><a data-scroll href="#achivement_sec"><span>achivements</span></a></li>
+                        <li><a data-scroll href="#interest_sec"><span>interests</span></a></li>
+                        <li><a data-scroll href="#contact_sec"><span>contact</span></a></li>
+                     </ul>
+                  </div>
+               </nav>
+               <!--/Navigation-->
             </div>
-            <div class="columns-block container">
-                <div class="left-col-block blocks">
-                    <header class="header theiaStickySidebar">
-                        <div class="profile-img">
-                            <img src="img/img-profile.jpg" class="img-responsive" alt="" />
+            <div class="col-lg-8 col-xs-12 pad-zero">
+               <!--Header-->
+               <header>
+                  <div class="header-wrap col-lg-10 center-div">
+                     <div class="float-left name">
+                        <a data-scroll href="#body">
+                        <span>
+                        MOHAMMED RISHAD
+                        </span>
+                        </a>
+                     </div>
+                     <div class="float-right social-download-wrap">
+                        <a href="MohammedRishadResume.pdf" class="btn btn-default float-left" target="_blank">
+                        <span class="mask"></span>
+                        <span class="btn-label">
+                        <b>download resume</b>
+                        <span class="icon pe-7s-download"></span>
+                        </span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="clearfix"></div>
+               </header>
+               <!--/Header-->
+               <!--Main Content-->
+               <div id="main_content" class="content-block margin-top-150 margin-top-sm-70 margin-top-xs-50">
+                  <!--Introduction Sec-->
+                  <section id="intro_content_sec"
+                     class="col-lg-10 col-md-11 col-sm-11 center-div intro-content-wrap sec-pad">
+                     <div class="person-img margin-bottom-xs"></div>
+                     <h1>
+                        Hello! <span id="typed"></span>
+                     </h1>
+                     <h6>
+                        about
+                     </h6>
+                     <p class="pad-bottom-35 wow fadeInUp" data-wow-duration=".6s">
+                        I am a software engineer, mainly focused on the web development and open-souce. I am currenty working at Reckonsys Tech Labs. Before joining here, I was working at <a class="goto-social" href="https://www.sayonetech.com" target="_blank">SayOne Technologies</a> for almost 1.5 years and <a class="goto-social" href="https://www.cognicor.com" target="_blank">CogniCor Technologies</a> for almost 1 year. I have Master's degree in Computer Science from <a class="goto-social" href="https://uoc.ac.in/" target="_blank">University of Calicut</a>
+                     </p>
+                  </section>
+                  <!--/Introduction Sec-->
+                  <hr class="separater-hr"/>
+                  <!--WhatWeDo Sec-->
+                  <!--                <section id="services_sec"-->
+                  <!--                         class="col-lg-10 col-md-11 col-sm-11 center-div services-icon-wrap  sec-pad-top sec-pad-bottom-xs">-->
+                  <!--                    <h6>what i do</h6>-->
+                  <!--                    <div class="row">-->
+                  <!--                        <div class="col-sm-3 col-xs-6 margin-bottom-sm icon-wrap wow fadeInLeft" data-wow-duration=".4s"-->
+                  <!--                             data-wow-delay="0s">-->
+                  <!--                            <span class="icon pe-7s-network"></span>-->
+                  <!--                            <span class="key-fact">-->
+                  <!--										PROTOTYPING-->
+                  <!--									</span>-->
+                  <!--                        </div>-->
+                  <!--                        <div class="col-sm-3 col-xs-6 margin-bottom-sm icon-wrap wow fadeInLeft" data-wow-duration=".4s"-->
+                  <!--                             data-wow-delay=".1s">-->
+                  <!--                            <span class="icon pe-7s-vector"></span>-->
+                  <!--                            <span class="key-fact">-->
+                  <!--										DESIGNING -->
+                  <!--									</span>-->
+                  <!--                        </div>-->
+                  <!--                        <div class="col-sm-3 col-xs-6 margin-bottom-sm icon-wrap wow fadeInLeft" data-wow-duration=".4s"-->
+                  <!--                             data-wow-delay=".2s">-->
+                  <!--                            <span class=" icon pe-7s-camera"></span>-->
+                  <!--                            <span class="key-fact">-->
+                  <!--										PHOTOGRAPHY-->
+                  <!--									</span>-->
+                  <!--                        </div>-->
+                  <!--                        <div class="col-sm-3 col-xs-6 margin-bottom-sm icon-wrap wow fadeInLeft" data-wow-duration=".4s"-->
+                  <!--                             data-wow-delay=".3s">-->
+                  <!--                            <span class="icon pe-7s-portfolio"></span>-->
+                  <!--                            <span class="key-fact">-->
+                  <!--										MANAGEMENT-->
+                  <!--									</span>-->
+                  <!--                        </div>-->
+                  <!--                    </div>-->
+                  <!--                </section>-->
+                  <!--/WhatWeDo Sec-->
+                  <hr class="separater-hr"/>
+                  <!--Skills Sec-->
+                  <section id="skill_sec"
+                     class="col-lg-10 col-md-11 col-sm-11 center-div skills-wrap  sec-pad-top sec-pad-bottom-xs">
+                     <h6>technical skills</h6>
+                     <p class="wow fadeInUp" data-wow-duration=".4s"></p>
+                     <div class="row margin-top-40">
+                        <div class="col-sm-5 margin-bottom-sm">
+                           <span class="progress-cat">Python</span>
+                           <div class="progress-bar-graph">
+                              <div class="progress-bar-wrap">
+                                 <div class="bar-wrap">
+                                    <span data-width="97">
+                                    <strong><i>87</i>%</strong>
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                        <div class="content">
-                            <h1>Mohammed Rishad</h1>
-                            <span class="lead">Python Developer</span>
-                            <div class="about-text">
-                                <p>
-                                    Programmer | Techie | Dreamer | Hacker & Bug Bounty Hunter | Adventurer | Innovator | Football Lover
-                                </p>
-                                <!--<p><img src="img/signature.png" alt="" class="img-responsive"/></p>-->
-                            </div>
-                            <center>
-                                <ul class="social-icon">
-                                    <li><a href="https://www.linkedin.com/in/vkmrishad" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://github.com/vkmrishad" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://stackoverflow.com/users/6874947/mohammed-rishad" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.facebook.com/vkmrishad" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.twitter.com/vkmrishad" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCvnIlVDRk46_xpnrrAiYrTg" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        <div class="col-sm-offset-1 col-sm-5 margin-bottom-sm">
+                           <span class="progress-cat">Django</span>
+                           <div class="progress-bar-graph">
+                              <div class="progress-bar-wrap">
+                                 <div class="bar-wrap">
+                                    <span data-width="97">
+                                    <strong><i>89</i>%</strong>
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-5 margin-bottom-sm">
+                           <span class="progress-cat">HTML5</span>
+                           <div class="progress-bar-graph">
+                              <div class="progress-bar-wrap">
+                                 <div class="bar-wrap">
+                                    <span data-width="100">
+                                    <strong><i>95</i>%</strong>
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-offset-1 col-sm-5 margin-bottom-sm">
+                           <span class="progress-cat">CSS3</span>
+                           <div class="progress-bar-graph">
+                              <div class="progress-bar-wrap">
+                                 <div class="bar-wrap">
+                                    <span data-width="100">
+                                    <strong><i>92</i>%</strong>
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-5 margin-bottom-sm">
+                           <span class="progress-cat">JAVASCRIPT</span>
+                           <div class="progress-bar-graph">
+                              <div class="progress-bar-wrap">
+                                 <div class="bar-wrap">
+                                    <span data-width="86">
+                                    <strong><i>86</i>%</strong>
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-offset-1 col-sm-5 margin-bottom-sm">
+                           <span class="progress-cat">ANGULAR</span>
+                           <div class="progress-bar-graph">
+                              <div class="progress-bar-wrap">
+                                 <div class="bar-wrap">
+                                    <div class="bar-wrap">
+                                       <span data-width="86">
+                                       <strong><i>83</i>%</strong>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-5 margin-bottom-sm">
+                           <span class="progress-cat">MYSQL</span>
+                           <div class="progress-bar-graph">
+                              <div class="progress-bar-wrap">
+                                 <div class="bar-wrap">
+                                    <span data-width="86">
+                                    <strong><i>89</i>%</strong>
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-offset-1 col-sm-5 margin-bottom-sm">
+                           <span class="progress-cat">POSTGRESQL</span>
+                           <div class="progress-bar-graph">
+                              <div class="progress-bar-wrap">
+                                 <div class="bar-wrap">
+                                    <div class="bar-wrap">
+                                       <span data-width="86">
+                                       <strong><i>82</i>%</strong>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                     </div>
+                  </section>
+                  <!--/Skills Sec-->
+                  <hr class="separater-hr"/>
+                  <!--Work Sec-->
+<!--                   <section id="work_sec" class="col-lg-10 col-md-11 col-sm-11 center-div skills-wrap  sec-pad">
+                     <h6>work</h6>
+                     <div id="portfolio-wrap" class="padding-sec-lg">
+                        <ul id="portfolio" class="auto-construct  project-gallery" data-col="2">
+                           <li class="item tall" data-src="assets/img/mock1.jpg"
+                              data-sub-html="<h6>Bagwati</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                              <a href="#">
+                              <img class="img-responsive" src="assets/img/mock1.jpg" alt="Image description"/>
+                              <span class="hover-cap">Bagwati</span>
+                              </a>
+                           </li>
+                           <li class="item small" data-src="http://www.youtube.com/watch?v=Pq9yPrLWMyU"
+                              data-poster="img/mock2.jpg"
+                              data-sub-html="<h6>Not a Keyboard</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                              <a href="#">
+                              <img class="img-responsive" src="assets/img/mock2.jpg" alt="Image description"/>
+                              <span class="hover-cap">Not a Keyboard</span>
+                              </a>
+                           </li>
+                           <li class="item tall" data-src="assets/img/mock4.jpg"
+                              data-sub-html="<h6>Into the Woods</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                              <a href="#">
+                              <img class="img-responsive" src="assets/img/mock4.jpg" alt="Image description"/>
+                              <span class="hover-cap">Into the Woods</span>
+                              </a>
+                           </li>
+                           <li class="item small" data-src="http://vimeo.com/1084537" data-poster="img/mock3.jpg"
+                              data-sub-html="<h6>Ultra Saffire</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                              <a href="#">
+                              <img class="img-responsive" src="assets/img/mock3.jpg" alt="Image description"/>
+                              <span class="hover-cap"> Ultra Saffire</span>
+                              </a>
+                           </li>
+                           <li class="item" data-src="assets/img/mock5.jpg"
+                              data-sub-html="<h6>Happy Puppy</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                              <a href="#">
+                              <img class="img-responsive" src="assets/img/mock5.jpg" alt="Image description"/>
+                              <span class="hover-cap">Happy Puppy</span>
+                              </a>
+                           </li>
+                           <li class="item" data-html="#video1" data-poster="img/mock6.jpg"
+                              data-sub-html="<h6>Wooden Closet</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                              <a href="#">
+                              <img class="img-responsive" src="assets/img/mock6.jpg" alt="Image description"/>
+                              <span class="hover-cap">Wooden Closet</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </section> -->
+                  <!--/Work Sec-->
+                  <hr class="separater-hr"/>
+                  <!--Qualfication Sec-->
+                  <section id="edu_sec" class="col-lg-10 col-md-11 col-sm-11 center-div education-wrap  sec-pad">
+                     <h6>education</h6>
+                     <p class="wow fadeInUp" data-wow-duration=".4s">
+                     </p>
+                     <div class="qualfication-wrap">
+                        <div class="qualfication first-row wow fadeInUp" data-wow-duration=".4s">
+                           <div class="col-sm-2">
+                              <span class="row-count"><span>1</span></span>
+                           </div>
+                           <div class="col-sm-2">
+                              <span class="yr-pers vertical-align-pad">2014-2016</span>
+                           </div>
+                           <div class="col-sm-5">
+                              <span class="insti vertical-align-pad">University of Calicut, Kerala</span>
+                           </div>
+                           <div class="col-sm-3">
+                              <span class="design vertical-align-pad">
+                              Master of Computer Science
+                              </span>
+                           </div>
+                        </div>
+                        <div class="qualfication wow fadeInUp" data-wow-duration=".4s">
+                           <div class="col-sm-2">
+                              <span class="row-count"><span>2</span></span>
+                           </div>
+                           <div class="col-sm-2">
+                              <span class="yr-pers vertical-align-pad">2011-2014</span>
+                           </div>
+                           <div class="col-sm-5">
+                              <span class="insti vertical-align-pad">University of Calicut, Kerala</span>
+                           </div>
+                           <div class="col-sm-3">
+                              <span class="design vertical-align-pad">
+                                 Bachelor of Computer
+                                 <Science></Science>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  <!--/Qualfication Sec-->
+                  <hr class="separater-hr"/>
+                  <!--Experience Sec-->
+                  <section id="exp_sec" class="col-lg-10 col-md-11 col-sm-11 center-div experience-wrap  sec-pad">
+                     <h6>experience</h6>
+                     <div class="exp-timeline-wrap">
+                        <div class="row exp-timeline timeline-active">
+                           <div class="col-xs-2">
+                              <div class="timeline-st"></div>
+                           </div>
+                           <div class="col-xs-10 exp-content-wrap">
+                              <div class="row">
+                                 <div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0s">
+                                    <div class="col-sm-3 duration"><span>May 2019 - present</span></div>
+                                    <div class="col-sm-9">
+                                       <span class="job-desn">Software Engineer</span>
+                                       <span class="job-loc">Reckonsys Tech Labs, Bengaluru
+                                       </span>
+                                       <p class="job-summary p-small">
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row exp-timeline">
+                           <div class="col-xs-2">
+                              <div class="timeline-st"></div>
+                           </div>
+                           <div class="col-xs-10 exp-content-wrap">
+                              <div class="row">
+                                 <div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.2s">
+                                    <div class="col-sm-3 duration"><span>Feb 2018 — May 2018</span></div>
+                                    <div class="col-sm-9">
+                                       <span class="job-desn">Software Engineer</span>
+                                       <span class="job-loc">SayOne Technologies, Cochin
+                                       </span>
+                                       <p class="job-summary p-small">
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row exp-timeline">
+                           <div class="col-xs-2">
+                              <div class="timeline-st"></div>
+                           </div>
+                           <div class="col-xs-10 exp-content-wrap">
+                              <div class="row">
+                                 <div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.2s">
+                                    <div class="col-sm-3 duration"><span>Feb 2017 — Nov 2017</span></div>
+                                    <div class="col-sm-9">
+                                       <span class="job-desn">Junior Python Developer</span>
+                                       <span class="job-loc">CogniCor Technologies, Cochin
+                                       </span>
+                                       <p class="job-summary p-small">
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row exp-timeline">
+                           <div class="col-xs-2">
+                              <div class="timeline-st"></div>
+                           </div>
+                           <div class="col-xs-10 exp-content-wrap">
+                              <div class="row">
+                                 <div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.2s">
+                                    <div class="col-sm-3 duration"><span>Mar 2016 — Aug 2016</span></div>
+                                    <div class="col-sm-9">
+                                       <span class="job-desn">Intern</span>
+                                       <span class="job-loc">Biztime IT Solutions, Bengaluru
+                                       </span>
+                                       <p class="job-summary p-small">
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  <!--/Experience Sec-->
+                  <hr class="separater-hr"/>
+                  <!--Client Sec-->
+                  <!--                <section id="client_sec"-->
+                  <!--                         class="col-lg-10 col-md-11 col-sm-11 center-div client-wrap  sec-pad wow bounceIn"-->
+                  <!--                         data-wow-duration=".4s">-->
+                  <!--                    <h6>clients</h6>-->
+                  <!--                    <div class="client-carousel">-->
+                  <!--                        <img src="assets/img/client1.png" alt="client">-->
+                  <!--                        <img src="assets/img/client2.png" alt="client">-->
+                  <!--                        <img src="assets/img/client3.png" alt="client">-->
+                  <!--                        <img src="assets/img/client4.png" alt="client">-->
+                  <!--                        <img src="assets/img/client5.png" alt="client">-->
+                  <!--                        <img src="assets/img/client2.png" alt="client">-->
+                  <!--                    </div>-->
+                  <!--                </section>-->
+                  <!--/Client Sec-->
+                  <hr class="separater-hr"/>
+                  <!--Achivement Sec-->
+                  <section id="achivement_sec"
+                         class="col-lg-10 col-md-11 col-sm-11 center-div achivement-wrap  sec-pad-top sec-pad-bottom-sm">
+                    <h6>achivements</h6>
+                    <p class="wow fadeInUp" data-wow-duration=".4s"></p>
+                    <div class="achivement-list-wrap margin-top-40">
+                        <ul class="row">
+                            <li class="col-sm-12">
+                                <ul>
+                                    <li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s"
+                                        data-wow-delay="0s">
+                                        <span class="dash-pointer">-</span>
+                                        <span class="achive-pts">
+                                          SayOne Rockstar - SayOne Technologies (DEC 2018)
+                                        </span>
+                                    </li>
+                                    <li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s"
+                                        data-wow-delay="0s">
+                                        <span class="dash-pointer">-</span>
+                                        <span class="achive-pts">
+                                          Djangothon2018 - HackerEarth (NOV 2018)
+                                        </span>
+                                    </li>
                                 </ul>
-                            </center>
-
-                            <center>
-                                <a href="MohammedRishadResume.pdf"><i class="fa fa-download" aria-hidden="true"></i> <b>Download Resume</b></a>
-                            </center>
-                        </div>
-                    </header>
-                    <!-- .header-->
-                </div>
-                <!-- .left-col-block -->
-                <div class="right-col-block blocks">
-                    <div class="theiaStickySidebar">
-                    	                        <section class="section-contact section-wrapper gray-bg">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="section-title">
-                                            <h2>Contact Details</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--.row-->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <address>
-                                            <strong>Address</strong><br>
-                                            Vallakkatt Kadungath (H),<br>
-                                            Randathani Post,<br>
-                                            Malappuram,<br>
-                                            Kerala, India, Pin-676510
-                                        </address>
-                                        <address>
-                                            <strong>Mobile Number</strong><br>
-                                            +91-9567802281
-                                        </address>
-                                        <address>
-                                            <strong>Email</strong><br>
-                                            mohammedrishad.vk@gmail.com
-                                        </address>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.container-fluid-->
-                        </section>
-                        <!--.section-contact-->
-
-                        <!-- Todo -->
-                        <!-- <section class="expertise-wrapper section-wrapper gray-bg">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="section-title">
-                                            <h2>Expertise</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="expertise-item">
-                                            <h3>Professionally drive</h3>
-                                            <p>
-                                                Synergistically strategize customer directed resources rather than principle.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="expertise-item">
-                                            <h3>Seamlessly leverage </h3>
-                                            <p>
-                                                Quickly repurpose reliable customer service with orthogonal ideas. Competently.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="expertise-item">
-                                            <h3>Interactively incubate</h3>
-                                            <p>
-                                                Interactively myocardinate high standards in initiatives rather than next-generation.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="expertise-item">
-                                            <h3>Globally streamline</h3>
-                                            <p>
-                                                Dynamically initiate client-based convergence vis-a-vis performance based. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section> -->
-                        <!-- .expertise-wrapper -->
-
-                                                <section class="section-wrapper section-experience gray-bg">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="section-title">
-                                            <h2>Work Experience</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--.row-->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="content-item">
-                                            <small>Feb, 2018 - Present</small>
-                                            <h3>Software Engineer</h3>
-                                            <h4>SayOne Technologies Pvt Ltd.</h4>
-                                            <p>Kochi, India</p>
-                                        </div>
-                                        <div class="content-item">
-                                            <small>Feb, 2017 - Nov, 2017</small>
-                                            <h3>Python Developer</h3>
-                                            <h4>CogniCor Technologies Pvt Ltd.</h4>
-                                            <p>Kochi, India</p>
-                                        </div>
-                                        <div class="content-item">
-                                            <small>March, 2016 - August, 2016</small>
-                                            <h3>Intern</h3>
-                                            <h4>Biztime IT Solutions Pvt Ltd.</h4>
-                                            <p>Bangalore, India</p>
-                                        </div>
-                                        <!-- .experience-item -->
-                                    </div>
-                                </div>
-                                <!--.row-->
-                            </div>
-                            <!-- .container-fluid -->
-                        </section>
-                        <!-- .section-experience -->
-
-                        <section class="section-wrapper section-education">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="section-title">
-                                            <h2>Education</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--.row-->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="content-item">
-                                            <small>2014 - 2016</small>
-                                            <h3>Master of Science, Computer Science</h3>
-                                            <h4>Department of Computer Science, University of Calicut</h4>
-                                            <p>Malappuram, Kerala</p>
-                                        </div>
-                                        <!-- .experience-item -->
-                                        <div class="content-item">
-                                            <small>2011 - 2014</small>
-                                            <h3>Bachelor of Science, Computer Science</h3>
-                                            <h4>Majlis Arts and Science College, University of Calicut</h4>
-                                            <p>Malappuram, Kerala</p>
-                                        </div>
-                                        <!-- .experience-item -->
-                                    </div>
-                                </div>
-                                <!--.row-->
-                            </div>
-                            <!-- .container-fluid -->
-                        </section>
-                        <!-- .section-education -->
-
-                        <section class="section-wrapper skills-wrapper">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="section-title">
-                                            <h2>Skills</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h3>Professional</h3>
-                                        <div class="progress-wrapper">
-                                            <div class="progress-item">
-                                                <span class="progress-title">HTML/CSS</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                                    </div>
-                                                </div>
-                                                <!-- .progress -->
-                                            </div>
-                                            <!-- .skill-progress -->
-                                            <div class="progress-item">
-                                                <span class="progress-title">PYTHON/DJANGO</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                            <div class="progress-item">
-                                                <span class="progress-title">JS/JQUERY</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                            <div class="progress-item">
-                                                <span class="progress-title">NODE.JS</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                        </div>
-                                        <!-- /.progress-wrapper -->
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h3>Personal</h3>
-                                        <div class="progress-wrapper">
-                                            <div class="progress-item">
-                                                <span class="progress-title">INNOVATIVE</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                                    </div>
-                                                </div>
-                                                <!-- .progress -->
-                                            </div>
-                                            <!-- .skill-progress -->
-                                            <div class="progress-item">
-                                                <span class="progress-title">CREATIVE</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                            <div class="progress-item">
-                                                <span class="progress-title">TEAM PLAYER</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                            <div class="progress-item">
-                                                <span class="progress-title">PASSIONATE</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                        </div>
-                                        <!-- /.progress-wrapper -->
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h3>Database</h3>
-                                        <div class="progress-wrapper">
-                                            <div class="progress-item">
-                                                <span class="progress-title">MYSQL</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                            <div class="progress-item">
-                                                <span class="progress-title">MONGODB</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                            <div class="progress-item">
-                                                <span class="progress-title">POSTGRESQL</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                            <div class="progress-item">
-                                                <span class="progress-title">SQLLITE</span>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                                    </div>
-                                                </div>
-                                                <!-- /.progress -->
-                                            </div>
-                                            <!-- /.skill-progress -->
-                                        </div>
-                                        <!-- /.progress-wrapper -->
-                                    </div>
-                                </div>
-                                <!--.row -->
-                            </div>
-                            <!-- .container-fluid -->
-                        </section>
-                        <!-- .skills-wrapper -->
-
-                        <section class="section-wrapper section-award-honor">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="section-title">
-                                            <h2>Awards and Honors</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--.row-->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="content-item">
-                                            <small>January 2019</small>
-                                            <h3>SayOne RockStar - December 2018</h3>
-                                            <h4>SayOne Technologies</h4>
-                                        </div>
-                                        <!-- .award-item -->
-                                        <div class="content-item">
-                                            <small>November 2018</small>
-                                            <h3>Djangothon2018 (1st Prize Winning Team) by HackerEarth</h3>
-                                            <h4>HackerEarth</h4>
-                                        </div>
-                                        <!-- .award-item -->
-                                    </div>
-                                </div>
-                                <!--.row-->
-                            </div>
-                            <!-- .container-fluid -->
-                        </section>
-                        <!-- .section-award-honor -->
-
-                        <section class="section-wrapper section-interest gray-bg">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="section-title">
-                                            <h2>Interests</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- .row -->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="content-item">
-                                            <ul>
-	                                            <li><b>-</b> Competitive Programming</li>
-												<li><b>-</b> Web Application Security Research</li>
-												<li><b>-</b> Technology</li>
-												<li><b>-</b> Football</li>
-												<li><b>-</b> Travel</li>
-												<li><b>-</b> Photography</li>
-											</ul>
-                                        </div>
-                                        <!-- <div class="content-item">
-                                            <h3>Art</h3>
-                                            
-                                            <p>Dramatically utilize superior infomediaries whereas functional core competencies. Enthusiastically repurpose synergistic vortals for customer directed portals. Interactively pursue sustainable leadership via.</p>
-                                            </div> -->
-                                    </div>
-                                </div>
-                                <!-- .row -->
-                            </div>
-                        </section>
-                        <!-- .section-publications -->
-                        <!--
-                            <section class="section-wrapper portfolio-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="section-title">
-                                                <h2>Portfolio</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <a class="portfolio-item" href="#">
-                                                <div class="portfolio-thumb">
-                                                    <img src="img/portfolio-1.jpg" alt="">
-                                                </div>
-                            
-                                                <div class="portfolio-info">
-                                                    <h3>Creative concepts</h3>
-                                                    <small>domain.com</small>
-                                                </div>
-                                                <!- - portfolio-info - ->
-                                            </a>
-                                            <!- - .portfolio-item - ->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <a class="portfolio-item" href="#">
-                                                <div class="portfolio-thumb">
-                                                    <img src="img/portfolio-2.jpg" alt="">
-                                                </div>
-                            
-                                                <div class="portfolio-info">
-                                                    <h3>Customer focused</h3>
-                                                    <small>domain.com</small>
-                                                </div>
-                                                <!- - portfolio-info - ->
-                                            </a>
-                                            <!- - .portfolio-item - ->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <a class="portfolio-item" href="#">
-                                                <div class="portfolio-thumb">
-                                                    <img src="img/portfolio-3.jpg" alt="">
-                                                </div>
-                            
-                                                <div class="portfolio-info">
-                                                    <h3>Management methodology</h3>
-                                                    <small>domain.com</small>
-                                                </div>
-                                                <!- - portfolio-info - ->
-                                            </a>
-                                            <!- - .portfolio-item - ->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <a class="portfolio-item" href="#">
-                                                <div class="portfolio-thumb">
-                                                    <img src="img/portfolio-4.jpg" alt="">
-                                                </div>
-                            
-                                                <div class="portfolio-info">
-                                                    <h3>Market research</h3>
-                                                    <small>domain.com</small>
-                                                </div>
-                                                <!- - portfolio-info - ->
-                                            </a>
-                                            <!- - .portfolio-item - ->
-                                        </div>
-                            
-                                    </div>
-                                    <!- - /.row - ->
-                                </div>
-                            </section>
-                            <!- - .portfolio - ->
-                            
-                            -->
-                        <footer class="footer">
-                            <div class="copyright-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="copytext">&copy; Mohammed Rishad. All rights reserved </div>
-                                        </div>
-                                    </div>
-                                    <!--.row-->
-                                </div>
-                                <!-- .container-fluid -->
-                            </div>
-                            <!-- .copyright-section -->
-                        </footer>
-                        <!-- .footer -->
+                            </li>
+                        </ul>
                     </div>
-                    <!-- Sticky -->
-                </div>
-                <!-- .right-col-block -->
+                  </section>
+                  <!--/Achivement Sec-->
+                  <hr class="separater-hr"/>
+                  <!--Interest Sec-->
+                  <section id="interest_sec"
+                         class="col-lg-10 col-md-11 col-sm-11 center-div achivement-wrap  sec-pad-top sec-pad-bottom-sm">
+                    <h6>Interests</h6>
+                    <p class="wow fadeInUp" data-wow-duration=".4s"></p>
+                    <div class="achivement-list-wrap margin-top-40">
+                        <ul class="row">
+                            <li class="col-sm-12">
+                                <ul>
+                                    <li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s"
+                                        data-wow-delay="0s">
+                                        <span class="dash-pointer">-</span>
+                                        <span class="achive-pts">Competitive Programming</span>
+                                    </li>
+                                    <li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s"
+                                        data-wow-delay="0s">
+                                        <span class="dash-pointer">-</span>
+                                        <span class="achive-pts">Web Application Security Research</span>
+                                    </li>
+                                    <li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s"
+                                        data-wow-delay="0s">
+                                        <span class="dash-pointer">-</span>
+                                        <span class="achive-pts">Technology</span>
+                                    </li>
+                                    <li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s"
+                                        data-wow-delay="0s">
+                                        <span class="dash-pointer">-</span>
+                                        <span class="achive-pts">Football</span>
+                                    </li>
+                                    <li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s"
+                                        data-wow-delay="0s">
+                                        <span class="dash-pointer">-</span>
+                                        <span class="achive-pts">Travel</span>
+                                    </li>
+                                    <li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s"
+                                        data-wow-delay="0s">
+                                        <span class="dash-pointer">-</span>
+                                        <span class="achive-pts">Photography</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </section>
+                  <!--/Interest Sec-->
+                  <hr class="separater-hr"/>
+                  <!--Contact Sec-->
+                  <section id="contact_sec"
+                     class="col-lg-10 col-md-11 col-sm-11 center-div contact-wrap  sec-pad-top sec-pad-bottom-sm">
+                     <h6>contact</h6>
+                     <div data-ng-controller="ContactController" class="align-center wow fadeInUp"
+                        data-wow-duration=".4s">
+                        <h3>Hello friends, I'd love to hear from you.</h3>
+                        <div class="email-direct">
+                           <p class="wow fadeInRight" data-wow-duration=".4s">Email me at <a
+                           href="mailto:mohammedrishad.vk@gmail.com">mohammedrishad.vk@gmail.com</a></p>
+                        </div>
+                     </div>
+                  </section>
+                  <!--Contact Sec-->
+                  <hr class="separater-hr"/>
+                  <!--Footer-->
+                  <footer class="col-lg-10 col-md-11 col-sm-11 center-div contact-wrap  sec-pad">
+                     <div class="row">
+                        <!--								<div class="col-sm-6 available-wrap">-->
+                        <!--									<span class="available-pointer"></span>-->
+                        <!--									<span class="available-tag">Available for Freelance Projects.</span>-->
+                        <!--								</div>-->
+                        <div class="col-sm-12">
+                           <div class="social-icons-wrap float-right">
+                              <!--Social Icons-->
+                              <ul class="social-icons float-right">
+                                 <li>
+                                    <a class="social-icon" href="https://www.linkedin.com/in/vkmrishad" target="_blank">
+                                    <span class="fa" data-hover="&#xf0e1;">&#xf0e1;</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="social-icon" href="https://github.com/vkmrishad" target="_blank">
+                                    <span class="fa" data-hover="&#xf09b;">&#xf09b;</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="social-icon" href="https://stackoverflow.com/users/6874947/mohammed-rishad" target="_blank">
+                                    <span class="fa" data-hover="&#xf16c;">&#xf16c;</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="social-icon" href="https://www.facebook.com/vkmrishad" target="_blank">
+                                    <span class="fa" data-hover="&#xf09a;">&#xf09a;</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="social-icon" href="https://www.twitter.com/vkmrishad" target="_blank">
+                                    <span class="fa" data-hover="&#xf099;">&#xf099;</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="social-icon" href="https://www.youtube.com/channel/UCvnIlVDRk46_xpnrrAiYrTg" target="_blank">
+                                    <span class="fa" data-hover="&#xf167;">&#xf167;</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                              <!--/Social Icons-->
+                           </div>
+                           <div class="goto-top text-right float-right">
+                              <a data-scroll href="#body">
+                              <span data-hover="top">
+                              top
+                              </span>
+                              </a>
+                           </div>
+                           <div class="copywrite-wrap text-right float-right">
+                              <p class="copywrite"><b>Mohammed Rishad &copy; 2019</b></p>
+                           </div>
+                        </div>
+                     </div>
+                  </footer>
+                  <!--/Footer-->
+               </div>
+               <!--/Main Content-->
             </div>
-            <!-- .columns-block -->
-        </div>
-        <!-- #main-wrapper -->
-        <!-- jquery -->
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <!-- Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/theia-sticky-sidebar.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+         </div>
+      </div>
+      <!-- /Container -->
+      <!-- Scripts -->
+      <script src="assets/js/jquery-1.11.3.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/modernizr.custom.js"></script>
+      <script src="assets/js/jquery.placeholder.js"></script>
+      <script src="assets/js/smooth-scroll.js"></script>
+      <script src="assets/js/countTo.js"></script>
+      <script src="assets/js/jQuery.appear.js"></script>
+      <script src="assets/js/isotope.js"></script>
+      <script src="assets/js/typed.js"></script>
+      <script src="assets/js/lightgallery-all.js"></script>
+      <script src="assets/js/jquery.mousewheel.min.js"></script>
+      <script src="assets/js/owl.carousel.min.js"></script>
+      <script src="assets/js/froogaloop2.min.js"></script>
+      <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/init.js"></script>
+   </body>
 </html>
