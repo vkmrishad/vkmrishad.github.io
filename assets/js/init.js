@@ -536,5 +536,5 @@ $('input[type=text], textarea').placeholder();
 /***** Placehoder ie9 end*****/	
 
 /***** LightGallery init start*****/	
-$('#portfolio').lightGallery({  showThumbByDefault: false,hash: false});
+// $('#portfolio').lightGallery({  showThumbByDefault: false,hash: false});
 /***** LightGallery init end*****/			
