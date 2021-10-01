@@ -1,8 +1,74 @@
-<html>
-  <head>
-    <title></title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404 - Page not found</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body,
+        p,
+        button {
+            font-family: "Bebas Neue";
+            background-color: #EBECF0;
+            color: #61677C;
+            user-select: none;
+        }
+        
+        div {
+            margin: auto;
+            text-align: center;
+            transition: box-shadow 0.3s ease-in-out;
+            border-radius: 30px;
+        }
+        
+        p {
+            margin: auto;
+        }
+        
+        button {
+            border: none;
+            border-radius: 30px;
+            font-size: 3em;
+            width: fit-content;
+            padding: 10px 30px 10px 30px;
+            box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+        
+        button:hover {
+            box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+        }
+        
+        button:focus {
+            outline: 0;
+        }
+        
+        .banner {
+            width: auto;
+            font-size: 20em;
+            text-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+        }
+    </style>
+</head>
+
 <body>
-<h3> 404 </h3>
+    <div class="banner">
+        <p>404</p>
+    </div>
+    <div>
+        <button onclick="goBack()">GO BACK</button>
+    </div>
 </body>
+
+<footer>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</footer>
+
 </html>
