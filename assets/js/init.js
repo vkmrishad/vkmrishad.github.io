@@ -150,7 +150,7 @@ var eric = function (){
 	
 	/*Typed js start*/
 	$("#typed").typed({
-		strings: ["^2100&nbsp;I am Mohammed Rishad.<br/>Backend Developer @ StudySmarter.<br/> Living In Malappuram, Kerala, India."],
+		strings: ["^2100&nbsp;I am Mohammed Rishad,<br>Backend Developer at Chronext. I'm from India🇮🇳 and currently residing in Köln, Germany🇩🇪."],
 		typeSpeed: 30,
 		backDelay: 750,
 		loop: false,
