@@ -13,6 +13,7 @@
 @import url(filter.css);
 @import url(default-skin/default-skin.css);
 @import url(lightgallery.css);
+
 /****************************/
 /** Reset **/
 /****************************/
@@ -505,6 +506,7 @@ p {
     transform: scale(1);
   }
 }
+
 /********Body Sec CSS********/
 .fixed-bg {
   background: transparent url("../img/mainbg.jpg") no-repeat;
@@ -678,6 +680,12 @@ header .header-wrap {
 
 header .header-wrap .pe-7s-download {
   font-size: 25px;
+  display: none;
+  color: #303133;
+}
+
+header .header-wrap .pe-7s-mail-open-file {
+  font-size: 22px;
   display: none;
   color: #303133;
 }
@@ -859,8 +867,7 @@ nav.navbar.navbar-default.vertical-nav li:hover span {
   color: #fff;
 }
 
-.vertical-nav-wrap.vertical-nav-animation
-  nav.navbar.navbar-default.vertical-nav {
+.vertical-nav-wrap.vertical-nav-animation nav.navbar.navbar-default.vertical-nav {
   opacity: 1;
   visibility: visible;
 }
@@ -1184,9 +1191,7 @@ a.goto-social:hover {
   opacity: 0.3;
 }
 
-.experience-wrap
-  .exp-timeline.timeline-inactive.timeline-active
-  .exp-content-wrap {
+.experience-wrap .exp-timeline.timeline-inactive.timeline-active .exp-content-wrap {
   opacity: 1 !important;
 }
 
@@ -1615,11 +1620,11 @@ footer .goto-top a:hover span {
     margin-top: 7.5px;
   }
 
-  .navbar-nav > li {
+  .navbar-nav>li {
     float: none;
   }
 
-  .navbar-nav > li > a {
+  .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -1745,6 +1750,7 @@ footer .goto-top a:hover span {
   }
 
   header .header-wrap .btn:hover .pe-7s-download,
+  header .header-wrap .btn:hover .pe-7s-mail-open-file,
   header .header-wrap .btn:hover .pe-7s-menu {
     color: #fff !important;
   }
@@ -1754,6 +1760,10 @@ footer .goto-top a:hover span {
   }
 
   header .header-wrap .pe-7s-download {
+    display: block;
+  }
+
+  header .header-wrap .pe-7s-mail-open-file {
     display: block;
   }
 
@@ -1819,6 +1829,7 @@ footer .goto-top a:hover span {
     width: 0;
   }
 
+  header .header-wrap .btn:hover .pe-7s-mail-open-file,
   header .header-wrap .btn:hover .pe-7s-download,
   header .header-wrap .btn:hover .pe-7s-menu {
     color: #303133 !important;
