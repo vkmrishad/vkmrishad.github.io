@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedEl = document.getElementById('typed-text');
     if (!typedEl) return;
 
-    const textToType = "Hello! I am Mohammed Rishad,<br>Senior & Lead Backend Engineer | Senior Full Stack Engineer at Chronext. Residing in Köln, Germany🇩🇪.";
+    const textToType = "Hello! I am Mohammed Rishad, Senior Software Engineer.<br>I am from India🇮🇳.<br>Currently working at Chronext, Residing in Köln, Germany🇩🇪.";
     const speed = 30; // ms per character
 
     let i = 0;
