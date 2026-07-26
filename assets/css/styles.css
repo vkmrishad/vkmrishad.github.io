@@ -674,9 +674,20 @@ section:last-of-type {
   gap: 30px;
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
 .project-card {
   position: relative;
-  background: var(--card-bg);
+  background: linear-gradient(90deg, var(--card-bg) 25%, rgba(255, 255, 255, 0.05) 50%, var(--card-bg) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
   border: 1px solid var(--accent);
   border-radius: 16px;
   overflow: hidden;
@@ -691,7 +702,12 @@ section:last-of-type {
   height: 100%;
   object-fit: contain;
   background: rgba(0, 0, 0, 0.2);
-  transition: var(--transition-smooth);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform var(--transition-smooth);
+}
+
+.project-card img.loaded {
+  opacity: 1;
 }
 
 .project-overlay {

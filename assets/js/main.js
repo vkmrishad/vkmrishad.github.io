@@ -73,26 +73,35 @@ document.addEventListener('DOMContentLoaded', () => {
         revealAboutHero();
       }, 200);
     } else {
-      window.addEventListener('load', () => {
+      const hidePreloader = () => {
         preloader.classList.add('fade-out');
         setTimeout(() => {
           preloader.style.display = 'none';
         }, 600);
         sessionStorage.setItem(sessionPreloaderKey, 'true');
 
-        // Start typing animation and reveals after preloader finishes
-        setTimeout(() => {
-          startTypingAnimation();
-          revealAboutHero();
-        }, 1200);
-      });
+        // Start typing animation and reveals immediately as preloader starts fading out
+        startTypingAnimation();
+        revealAboutHero();
+      };
+
+      if (document.readyState === 'loading') {
+        window.addEventListener('DOMContentLoaded', hidePreloader);
+      } else {
+        hidePreloader();
+      }
     }
   } else {
     // Fallback if preloader is not in DOM
-    window.addEventListener('load', () => {
+    if (document.readyState === 'loading') {
+      window.addEventListener('DOMContentLoaded', () => {
+        startTypingAnimation();
+        revealAboutHero();
+      });
+    } else {
       startTypingAnimation();
       revealAboutHero();
-    });
+    }
   }
 
   // 2. Typing Animation Logic (Types Hello! and contains a blinking cursor at the end)
@@ -101,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!typedEl) return;
 
     const textToType = "Hello! I am Mohammed Rishad, Senior Software Engineer.<br>I am from India🇮🇳.<br>Currently working at Chronext, Residing in Köln, Germany🇩🇪.";
-    const speed = 30; // ms per character
+    const speed = 15; // ms per character
 
     let i = 0;
     typedEl.innerHTML = '';
