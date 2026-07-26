@@ -140,7 +140,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../img/mainbg.jpg') no-repeat center center;
+  background: url('../img/mainbg.webp') no-repeat center center;
   background-size: cover;
   z-index: -2;
   transform: scale(1.05);
@@ -196,7 +196,7 @@ body {
   margin: 8px;
   border: 4px solid var(--accent);
   border-radius: 50%;
-  animation: loader-spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: loader-spin 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: var(--accent) transparent transparent transparent;
 }
 
@@ -516,7 +516,8 @@ section:last-of-type {
 
 .hero-left {
   flex-shrink: 0;
-  align-self: center; /* Centers the avatar horizontally on mobile */
+  align-self: center;
+  /* Centers the avatar horizontally on mobile */
 }
 
 .hero-right {
@@ -528,11 +529,13 @@ section:last-of-type {
   .hero-container {
     flex-direction: row;
     gap: 40px;
-    align-items: center; /* Vertically centers the avatar next to the typewriter block on desktop */
+    align-items: center;
+    /* Vertically centers the avatar next to the typewriter block on desktop */
   }
 
   .hero-left {
-    align-self: auto; /* Resets alignment on desktop */
+    align-self: auto;
+    /* Resets alignment on desktop */
   }
 }
 
@@ -540,7 +543,7 @@ section:last-of-type {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: url('../img/candidate.png') no-repeat center center;
+  background: url('../img/candidate.webp') no-repeat center center;
   background-size: cover;
   border: 3px solid var(--accent);
   margin-bottom: 30px;
@@ -1085,25 +1088,25 @@ footer {
 .reveal {
   opacity: 0;
   transform: translateY(35px);
-  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .reveal-left {
   opacity: 0;
   transform: translateX(-40px);
-  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .reveal-right {
   opacity: 0;
   transform: translateX(40px);
-  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .reveal-scale {
   opacity: 0;
   transform: scale(0.94);
-  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .reveal.revealed,
@@ -1170,6 +1173,7 @@ footer {
 @media (max-width: 1180px) {
   .sidebar {
     transform: translateX(-100%);
+    padding-top: calc(var(--header-height) + 20px);
   }
 
   .sidebar.active {

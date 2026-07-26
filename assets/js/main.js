@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('#about_sec .section-title.reveal-left, #about_sec .hero-desc.reveal').forEach((el, index) => {
       setTimeout(() => {
         el.classList.add('revealed');
-      }, index * 150);
+      }, index * 10);
     });
   }
 
@@ -235,10 +235,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (id) {
+          // Map hero_sec and about_sec to body since the "About" link targets #body
+          let targetId = id;
+          if (id === 'hero_sec' || id === 'about_sec') {
+            targetId = 'body';
+          }
+
           document.querySelectorAll('.sidebar-nav li').forEach(li => {
             li.classList.remove('active');
             const a = li.querySelector('a');
-            if (a && a.getAttribute('href') === `#${id}`) {
+            if (a && a.getAttribute('href') === `#${targetId}`) {
               li.classList.add('active');
             }
           });
