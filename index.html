@@ -102,6 +102,15 @@
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Preload Critical Images -->
+  <link rel="preload" as="image" href="assets/img/mainbg.webp" type="image/webp" />
+  <link rel="preload" as="image" href="assets/img/candidate.webp" type="image/webp" />
+
   <!-- Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -200,12 +209,6 @@
           <a href="https://stackoverflow.com/users/6874947/mohammed-rishad" class="social-icon-btn" target="_blank"
             rel="noopener" aria-label="StackOverflow Profile">
             <i class="fa-brands fa-stack-overflow"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/vkmrishad" class="social-icon-btn" target="_blank" rel="noopener"
-            aria-label="Facebook Profile">
-            <i class="fa-brands fa-facebook-f"></i>
           </a>
         </li>
         <li>
@@ -453,7 +456,8 @@
         <h2 class="section-title reveal-left">Projects</h2>
         <div class="projects-grid">
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/chronext.webp" alt="Chronext Project" />
+            <img src="assets/img/portfolio/chronext.webp" alt="Chronext Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">Chronext</h3>
               <p>Luxury watch ecommerce platform</p>
@@ -464,7 +468,8 @@
             </div>
           </div>
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/studysmarter.webp" alt="StudySmarter Project" />
+            <img src="assets/img/portfolio/studysmarter.webp" alt="StudySmarter Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">StudySmarter</h3>
               <p>EdTech learning platform and study helper</p>
@@ -475,7 +480,8 @@
             </div>
           </div>
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/nuflights.webp" alt="NuFlights Project" />
+            <img src="assets/img/portfolio/nuflights.webp" alt="NuFlights Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">NuFlights</h3>
               <p>Flight booking and search analytics engine</p>
@@ -486,7 +492,8 @@
             </div>
           </div>
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/transportsimple.webp" alt="TransportSimple Project" />
+            <img src="assets/img/portfolio/transportsimple.webp" alt="TransportSimple Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">TransportSimple</h3>
               <p>Fleet management and logistics SaaS solution</p>
@@ -497,7 +504,8 @@
             </div>
           </div>
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/etailpet.webp" alt="eTailPet Project" />
+            <img src="assets/img/portfolio/etailpet.webp" alt="eTailPet Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">eTailPet</h3>
               <p>All-in-one POS software for pet retailers</p>
@@ -508,7 +516,8 @@
             </div>
           </div>
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/feedmyfurbaby.webp" alt="FeedMyFurBaby Project" />
+            <img src="assets/img/portfolio/feedmyfurbaby.webp" alt="FeedMyFurBaby Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">FeedMyFurBaby</h3>
               <p>Personalized subscription pet food service</p>
@@ -519,7 +528,8 @@
             </div>
           </div>
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/d8adriven.webp" alt="D8A Driven Project" />
+            <img src="assets/img/portfolio/d8adriven.webp" alt="D8A Driven Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">D8A Driven</h3>
               <p>E-commerce data analytics dashboard</p>
@@ -530,7 +540,8 @@
             </div>
           </div>
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/acumen.webp" alt="Acumen Project" />
+            <img src="assets/img/portfolio/acumen.webp" alt="Acumen Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">Acumen</h3>
               <p>Aviation asset management system</p>
@@ -541,7 +552,8 @@
             </div>
           </div>
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/cliphire.webp" alt="ClipHire Project" />
+            <img src="assets/img/portfolio/cliphire.webp" alt="ClipHire Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">ClipHire</h3>
               <p>Video-first hiring and recruitment application</p>
@@ -552,7 +564,8 @@
             </div>
           </div>
           <div class="project-card reveal-scale">
-            <img src="assets/img/portfolio/moonllight.webp" alt="Moonllight Project" />
+            <img src="assets/img/portfolio/moonllight.webp" alt="Moonllight Project" loading="lazy"
+              onload="this.classList.add('loaded')" />
             <div class="project-overlay">
               <h3 class="project-title">Moonllight</h3>
               <p>Creative design and branding platform</p>
@@ -726,12 +739,6 @@
             <a href="https://stackoverflow.com/users/6874947/mohammed-rishad" class="social-icon-btn" target="_blank"
               rel="noopener" aria-label="StackOverflow Profile">
               <i class="fa-brands fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/vkmrishad" class="social-icon-btn" target="_blank" rel="noopener"
-              aria-label="Facebook Profile">
-              <i class="fa-brands fa-facebook-f"></i>
             </a>
           </li>
           <li>
