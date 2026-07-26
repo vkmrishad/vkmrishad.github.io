@@ -1,15 +1,60 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | Mohammed Rishad V K</title>
+  <meta name="robots" content="noindex, follow" />
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Instant Theme Applier to prevent white flash -->
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    if (savedTheme === 'light' || (!savedTheme && systemPrefersLight)) {
+      document.documentElement.classList.add('light-mode');
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('light-mode');
+        document.body.setAttribute('data-theme', 'light');
+      });
+    }
+  </script>
 </head>
+<body>
 
-<body class="not-found-page">
-  <h3 class="not-found-title"> Oops!</h3>
-  <img src="/assets/img/404-page.png" alt="not-found-image" />
-  <p class="not-found-text"> 404 - PAGE NOT FOUND</p>
-  <p> Sorry, we can't find what you're looking for.</p>
+  <!-- Fixed Background Background Image & Tint Overlay -->
+  <div class="fixed-bg"></div>
+  <div class="fixed-bg-overlay"></div>
+
+  <!-- 404 Error Content -->
+  <div class="err-wrapper">
+    <div class="err-title">404</div>
+    <h2 class="err-subtitle">Oops! Page Not Found</h2>
+    
+    <!-- Original image asset -->
+    <img src="assets/img/404-page.png" alt="Not Found Illustration" style="max-width: 250px; margin-bottom: 30px; opacity: 0.8; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));" />
+    
+    <p class="err-desc">
+      Sorry, we can't find the page you are looking for. It might have been removed, had its name changed, or is temporarily unavailable.
+    </p>
+    
+    <a href="index.html" class="btn-premium">
+      <i class="fa-solid fa-house" style="margin-right: 5px;"></i>
+      <span>Back to Home</span>
+    </a>
+  </div>
+
 </body>
-
 </html>
